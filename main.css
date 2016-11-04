@@ -1,0 +1,156 @@
+/* kobaltkween's CSS */
+body {
+    background-color: #123;
+    color: white;
+    width: 100%;
+    max-width: 1920px;
+    min-width: 360px;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+}
+p, body p, main p, li, blockquote, dd, dt {
+    font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+}
+a {
+    color: #28f;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    text-decoration: underline;
+}
+a:visited {
+    color: #07e;
+}
+a img {
+    border: none;
+}
+
+
+h1, h2 {
+    font-family: Raleway, sans-serif;
+}
+
+main {
+    position: relative;
+}
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 200;
+    margin-top: 0;
+    padding-top: 0;
+}
+figure {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#jumbo {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    height: 60vw;
+    min-height: 300px;
+    max-height: 850px;
+    overflow: hidden;
+    position: relative;
+}
+#jumbo figure img {
+    height: 60vw;
+    min-height: 300px;
+}
+#jumbo figcaption {
+    text-align: justify;
+}
+#jumbo h1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 10;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 200;
+}
+#jumbo figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#jumbo figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#jumbo.full figure img {
+    object-position: 30% 30%;
+}
+#jumbo.full figcaption {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    z-index: 11;
+}
+#jumbo.full figcaption a, #jumbo.full figcaption a:visited {
+    text-decoration: none;
+    color: white;
+    font-family: Raleway, "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 32px;
+}
+#jumbo.full figcaption a:hover, #jumbo.full figcaption a:focus {
+    text-decoration: underline;
+}
+#sampleImg figcaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+
+
+/*------------------- 600+ ------------------*/
+@media screen and (min-width: 600px) {
+    #jumbo figcaption, #mainImg figcaption {
+        bottom: 20px;
+    }
+}
+/*------------------- 600- ------------------*/
+@media screen and (max-width: 600px) {
+    #jumbo h1 {
+        text-align: center;
+        padding-bottom: 56px;
+    }
+    #jumbo figcaption {
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+}
+
+
+
+
+
+

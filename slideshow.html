@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Kobaltkween Productions: Gallery</title>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel%7CRaleway:200,300,100italic,300italic%7CRoboto:400,500" rel="stylesheet" type="text/css">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="slideshow.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <main>
+            <section id="jumbo" class="full slideshow">
+                <h1>Slideshow</h1>
+                <figure class="active">
+                    <img src="images/slide-goldAndLight.jpg" alt="A masked woman with dark skin wearing white and gold fantasy clothing reaching towards light">
+                    <figcaption><a href="images/slide-goldAndLight.jpg">Gold and Light</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/slide-Determination.jpg" alt="Portrait of a stylized Japanese woman with blue and purple hair in a light blue kimono">
+                    <figcaption><a href="images/slide-Determination.jpg">Determination</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/slide-Cozy.jpg" alt="A living room with a Christmas tree, a sleeping cat, and fire in the fireplace.">
+                    <figcaption><a href="images/slide-Cozy.jpg">Cozy</a></figcaption>
+                </figure>
+                <div class="ssSelect top">
+                    <div class="selector"></div>
+                </div>
+                <div class="ssControls">
+                    <div class="previous"></div>
+                    <div class="pp active"></div>
+                    <div class="next"></div>
+                </div>
+            </section>
+        </main>
+        <script src="slideshow.js"></script>
+        <script>
+            /* Set up the options for the slideshow we're about to create */
+            var slideOpts = {
+                showTime: 4000,
+                autoPlay: true,
+                prevSel: ".ssControls .previous",
+                nextSel: ".ssControls .next",
+                ppSel: ".ssControls .pp",
+                slideSelHolder: ".ssSelect",
+                slideSel: ".selector",
+                activeClass: "active",
+                modal: true
+            }
+            makeSS("#jumbo.slideshow", slideOpts);
+        </script>
+    </body>
+</html>
